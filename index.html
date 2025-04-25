@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Aleeyu usman shettima">
     <meta name="description" content="The official website for my portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUshettima</title>
     <link rel="Icon" href="images/favicon-16x16.png" type="images/x-icon">
     <link rel="stylesheet" href="port.css">
@@ -13,19 +13,25 @@
 
 <body>
     <header class="site-header">
-        <h1><span>AU</span>shettima</h1>
-        <nav class="nav">
-            <ul>
-                <li class="nav-items">
-                    <a href="#about">About <abbr title="About Me"></abbr></a>
-                </li>
-                <li class="nav-items">
-                    <a href="#project">Projects</a>
-                </li>
-                <li class="nav-items">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
+        <div class="logo">AUshettima</div>
+        <nav class="navbar">
+            <div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#project">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </nav>
     </header>
     <hr>
@@ -95,7 +101,7 @@
         <hr>
 
         <h3>Contact</h3>
-        <section id="contact" class="contact-section">
+        <section id="contact" class="contact-form">
             <div class="contact-container">
                 <h2 class="contact-title">Contact Form</h2>
                 <form action="https://httpbin.org/get" method="get" class="contact-form">
@@ -144,7 +150,7 @@
 
         <hr>
 
-        <p>Copyright &copy; AU_ShettimaDev</p>
+        <p class="copy">Copyright &copy; AU_ShettimaDev</p>
     </footer>
 </body>
 
