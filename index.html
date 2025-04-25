@@ -1,133 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Aliyu usman shettima">
-    <meta name="description" content="this is my personal portfolio web page">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="author" content="Aleeyu usman shettima">
+    <meta name="description" content="The official website for my portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AUshettima</title>
+    <link rel="Icon" href="images/favicon-16x16.png" type="images/x-icon">
+    <link rel="stylesheet" href="port.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <title>AU_Shettima</title> 
-    <link rel="icon" href="favicon-pp.png" type="image/x-icon">
-    <link rel="stylesheet" href="project1.css">
 </head>
+
 <body>
-    <!--Header/navigation-->
-    <header>
-        <h1 class="logo"><span>AU_</span>Shettima</h1>
-        <p class="subtitle"> Web-Developer | Enterprenuer</p>
-        <nav>
+    <header class="site-header">
+        <h1><span>AU</span>shettima</h1>
+        <nav class="nav">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li class="link contact-btn">
-                <li><a href="#blog">Blog</a></li>
+                <li class="nav-items">
+                    <a href="#about">About <abbr title="About Me"></abbr></a>
+                </li>
+                <li class="nav-items">
+                    <a href="#project">Projects</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </nav>
-
-        <a href="#contact" class="contactme">Contact Me</a>
     </header>
- <main>
-    <!--Hero section-->
-    <section class="hero" id="hero">
+    <hr>
+    <main>
+        <section id="about">
+            <div class="about-container flex-wrapper">
+                <div class="about-text-block">
+                    <h2>About Me:</h2>
+                    <p class="about-text">
+                        i'm <strong>Aleeyu usman shettima</strong>, a web developer passionate about building clean, responsive, and user-friendly websites.
+                        With a strong foundation in HTML, CSS, JavaScript, i focus on creating seamless digital experiences that bring ideas to life. 
+                        I am also the founder of <strong>Shettara</strong>, <abbr title="the shettara">Shettara</abbr> was founded in <time datetime="2025">2025</time>, a tech-driven brand specializing in web development and data solution.
+                        My goal is to help businesses and individuals establish a strong online presence through well-crafted digital solutions. 
+                        I believe in continious learning, innovation, and pushing boundaries, whether it's coding, solving problems, or collaborating on exiciting projects, i'm always looking for ways to create impact.
+                        <aside>
+                            <h3>More about me:</h3>
+                            <details>
+                                <summary>when did i start learning Coding and webDev?</summary>
+                                <p>
+                                    i start learning coding and web development this year <time datetime="2025">2025</time>, and i'm 25 year old, it was never to late to start, right! 
+                                    (source: <cite><a href="https://www.smithsonjang.com/arts-culture/where-did-the-taco-come-from-81228162" target="_blank">Aleeyu shettima</a></cite>)
+                                </p>
+                            </details>
+                        </aside>
+                    </p>
+                    <a href="#project" class="about-cta">See My Work</a>
+                </div>
+                <div>
+                    <figure class="about-image-block">
+                        <img src="images/hero 400.png" alt="My Hero picture" title="i love myself!" width="300" height="420" class="about-image">
+                        <figcaption>
+                            Front-end Developer
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
 
-        <div class="about-image">
-            <img src="img/hero 400.png" alt="">
-        </div>
+        <section id="project" class="project">
+            <H2>My Projects:</H2>
+            <div class="project-card">
+                <h2 class="subtitle">Personal Portfolio</h2>
+                <p>
+                    My first project is my personal portfolio website.
+                </p>
+                <span class="status-in-progress">This Very Website</span>
+            </div>
+            <div class="project-card">
+                <h2>Shettara website</h2>
+                <p>
+                    A tech brand website coming soon
+                </p>
+                <span class="coming-soon">Coming Soon</span>
+            </div>
+            <div class="project-card">
+                <h3 class="subtitle">Future Project</h3>
+                <p>
+                    More exiciting projects will be added here.
+                </p>
+                <span class="status-future">Stay Tuned</span>
+            </div>
+        </section>
 
-        <div>
-             <H2 class="about-content">About <span>Me</span>:</H2>
-            <h3 class="about-content">Frontend <span>Developer</span></h3>
-            <p>i'm <strong>Aleeyu usman shettima</strong>, a web developer passionate about building clean,responsive,and user-friendly websites. With a strong foundation in <b>HTML, CSS, and JavaScript</b>, i focus on creating seamless digital experiences that bring ideas to life. I'm also the founder of <b>Shettara</b>, a tech-driven brand specializing in web development and data solutions. My goal is to help businesses and individuals establish a strong online presence through well-crafted digital solutions. I believe in continious learning, innovation, and pushing boundaries. Whether it's coding, solving problems, or collaborating on exiciting projects, i'm always looking for ways to create impact.</p>
-        </div>
-    </section>
+        <hr>
+
+        <h3>Contact</h3>
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-title">Contact Form</h2>
+                <form action="https://httpbin.org/get" method="get" class="contact-form">
+                    <fieldset>
+                        <legend>Send A Message</legend>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="your name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email" placeholder="your email" required>
+                        </p>
+                        <p>
+                            <label for="Message">Message:</label>
+                            <br>
+                            <textarea name="Message" id="Message" cols="30" rows="10" placeholder="type your Message here"></textarea>
+                        </p>
+                    </fieldset>
+                    <button type="submit">Send</button>
+                    <button type="reset">Reset</button>
+                </form>
+                </section>
+                </section>
+            </div>
+    </main>
 
     <hr>
 
-    <section id="project" class="project">
-        <h3>My Projects:</h3>
-        <div class="projects-card">
-            <h2 class="subtitle">Personal Portfolio</h2>
-            <p>Currently building my personal portfolio website.</p>
-            <span class="status in-progress">Work in Progress</span>
-        </div>
-        <div class="project-card">
-            <h2>Shettara website</h2>
-            <p>A tech company website coming soon</p>
-            <span class="Coming soon">Coming Soon</span>
-        </div>
-        <div class="project-card">
-            <h2 class="subtitle">Future Project</h2>
-            <p>More exiciting projects will be added here.</p>
-            <span class="status future">Stay Tuned</span>
-        </div>
-    </section>
-
-    <br>
-
-    <section class="contact-form">
-        <h2 class="subtitle">Contact <span>Me</span>:</h2>
-        <form action="#">
-            <fieldset>
-            <legend class="personal">Personal Information:</legend>
-            <div class="input-box">
-            <input type="text" name="name" placeholder="Fullname">
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a
+                 href="https://wa.me/08062266578" target="_blank" class="social-icon">WhatsApp<i class="fa-brands fa-whatsapp"></i></a></a>
+                <a
+                 href="https://linkedin.com/in/AliyuShettima" target="_blank" class="social-icon">Linked<i class="fab fa-linkedin"></i></a>
+                <a 
+                href="https://twitter.com/PrimeShettima" target="_blank" class="social-icon">Twitter<i class="fab fa-twitter"></i></a>
             </div>
-            <div class="input-box">
-            <input type="email" name="email" placeholder="Your Email">
-            </div>
-            <div class="input-box">
-            <input type="numer" placeholder="Phone number">
-            </div>
-            
-            <textarea name="" cols="30" rows="10" id="" placeholder="Your Message"></textarea>
-            <input type="submit" value="send Message" class="btn-1">
-
-            </fieldset>
-        </form>
-    </section>
-
-    <br>
-
-    <section id="blog">
-        <div class="blog-container">
-            <h4 class="subtitle">Blog & Insights:</h4>
-            <p>Sharing my journey in web development, business, and self-improvement.</p>
-            <div class="blog-post">
-                <article class="post">
-                    <h3>My Experience Learning HTML & CSS</h3>
-                    <P>How I started learning web development and the challenges i faced..</P>
-                    <a href="#" class="read-more">Read More</a>
-                </article>
-
-                <article class="post">
-                    <h4>Why Every Business Need Website</h4>
-                    <p>Web presence is key for growth. Here's why business should invest...</p>
-                    <a href="#" class="read-more">Read More</a>
-                </article>
-
-                <article class="post">
-                    <h4>How I Plan to Build My Tech Brand: <strong>Shettara</strong></h4>
-                    <p>My Vision for Shettara and how i plan to grow it in the next few years....</p>
-                    <a href="#" class="read-more">Read More</a>
-                </article>
+        
+            <div class="footer-contact">
+                <h4>My Location</h4>
+                <p>
+                    <address>
+                        N0_15 magaji street,<br>Yola south, adamawa state, Nigeria. 
+                    </address>
+                </p>
+                <p>
+                    Phone: <a href="tel:+23480622665 78">08062266578</a>
+                </p>
             </div>
         </div>
-    </section>
-</main>
-    
-    <footer>
-        <p>&copy; Aleeyu usman shettima | Web Developer</p>
-        <div class="social link">
-        <a href="https://twitter.com/PrimeShettima" target="_blank">Twitter<i class="fab fa-twitter"></i></a>
-        <div>
-        <a href="https://linkedin.com/in/Aliyu Shettima" target="_blank">Linkedin<i class="fab fa-linkedin"></i></a>
-        </div>
-        </div>
-        <a href="#blog">Read My Blog</a>
+
+        <hr>
+        
+        <p>Copyright &copy; AU_ShettimaDev</p>
     </footer>
 </body>
+
 </html>
